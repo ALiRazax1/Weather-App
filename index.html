@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body{background-image: url(./ai-generated-rainy-sky-background-free-photo.jpg );background-repeat: no-repeat;background-size: cover; height: 100vh;}
+   .card{width:75%;max-width: 1440px;margin:0 auto;padding: 30px;
+background: rgba(255, 255, 255, 0.19);
+border-radius: 6px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.9px);
+-webkit-backdrop-filter: blur(2.9px);text-align: center;
+border: 1px solid #ffffffe6;color: rgba(255, 255, 255, 0.781);font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+input{background-color: transparent;width: 80%;outline: none;border-top: none;border-right: none;border-left: none;border-bottom: 2px solid #c2b9b9;color: #c2b9b9;font-size: medium;display: block;margin: 30px auto;}
+input::placeholder{color: #c2b9b9;}
+input:focus{border: none;border-bottom: 2px solid #c2b9b9;outline: none;}
+.card>div{width: 80%;margin: 0 auto; display: flex;justify-content: space-between;font-size: x-large;align-items: center;row-gap: 10px;}
+.card>div div{display: flex;justify-content: space-around;align-items: center;flex-wrap: wrap;}
+button{width: 100px;height: 35px;border: none;border-radius: 20px;background-color: #c2b9b9;cursor: pointer;}
+@media only screen and (max-width:720px) {
+    .card>div{display: flex;justify-content: space-around;align-items: center;flex-wrap: wrap;font-size: large;}
+}
+   </style>
+</head>
+<body>
+    <div class="card"> <div><input type="text" name="" id="input-city" placeholder="City Name"><button onclick="searchWeather()">Search</button> </div>
+
+<h2 id="city-name"></h2>
+<img style="width: 20%;" id="weather-icon" src="./assets/images/Rain.png" alt="">
+<h3 id="temperature"></h3>
+<h3 id="weather"></h3>
+<div><div> <img style="width: 25%;" src="./assets/images/humidity.png" alt=""> Humidity:<span id="humidity"></span></div>
+<div><img style="width: 25%;" src="./assets/images/wind.png" alt=""> Wind :<span id="wind"></span></div></div>
+
+</div>
+    <script src="./app.js"></script>
+</body>
+</html>
